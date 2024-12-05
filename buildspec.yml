@@ -11,7 +11,7 @@ phases:
         #!/bin/bash
         export REGION="us-east-1"
         export TAG="latest"
-        export IMAGE=${TAG/latest/previous}
+        export IMAGE="previous"
         echo REGION is $REGION
         echo IMAGE is $IMAGE
   post_build:
