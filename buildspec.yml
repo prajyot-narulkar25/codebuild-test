@@ -8,9 +8,12 @@ phases:
       - echo Hello
 
       - |
+        #!/bin/bash
         export REGION="us-east-1"
         export TAG="latest"
+        export IMAGE=${TAG/latest/previous}
         echo REGION is $REGION
+        echo IMAGE is $IMAGE
   post_build:
     commands:
       - echo Entered the post_build phase...
