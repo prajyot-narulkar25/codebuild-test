@@ -7,7 +7,6 @@ phases:
     commands:
       - echo Hello
       - |
-        #!/bin/bash
         export REGION="us-east-1"
         export TAG="latest"
       - IMAGE=${TAG/previous/latest}
