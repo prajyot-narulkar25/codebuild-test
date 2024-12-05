@@ -6,12 +6,11 @@ phases:
   build:
     commands:
       - echo Hello
-
+      - IMAGE=${TAG/previous/latest}
       - |
         #!/bin/bash
         export REGION="us-east-1"
         export TAG="latest"
-        export IMAGE="previous"
         echo REGION is $REGION
         echo IMAGE is $IMAGE
   post_build:
