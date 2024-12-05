@@ -9,8 +9,7 @@ phases:
       - |
         export REGION="us-east-1"
         export TAG="latest"
-      - IMAGE=${TAG/previous/latest}
-      - |
+        IMAGE=$(echo "$TAG" | sed 's/previous/latest/')
         echo REGION is $REGION
         echo IMAGE is $IMAGE
   post_build:
