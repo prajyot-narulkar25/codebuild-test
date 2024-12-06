@@ -10,10 +10,12 @@ phases:
         export REGION="us-east-1"
         export TAG="latest"
         export COMMIT_ID="${COMMIT_ID:-$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)}"
-        IMAGE="$(echo "$TAG" | sed 's/latest/previous/')"
+        export IMAGE="$(echo "$TAG" | sed 's/latest/previous/')"
+        export AWS_ACCOUNT_ID=$AWS_ACCOUNT_ID
         echo REGION is $REGION
         echo IMAGE is $IMAGE
         echo COMMIT_ID is $COMMIT_ID
+        echo AWS_ACCOUNT_ID is $AWS_ACCOUNT_ID
   post_build:
     commands:
       - echo Entered the post_build phase...
