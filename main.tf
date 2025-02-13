@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-bucket-name-4321"  # Change this to a globally unique name
+  bucket = "bucket-name-4321"  # Change this to a globally unique name
 }
 
 resource "aws_s3_bucket_versioning" "versioning" {
