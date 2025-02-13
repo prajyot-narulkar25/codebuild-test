@@ -1,5 +1,5 @@
 # Configure Fake Web Services provider with TFC token.
 
-provider "fakewebservices" {
-  token = var.PROVIDER_TOKEN
+provider "aws" {
+  region = "us-east-1"
 }

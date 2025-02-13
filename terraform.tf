@@ -1,16 +1,16 @@
-# This block instructs the Terraform CLI to use your Terraform Cloud workspace
-# as the remote backend for this project.
-#
-# Update the organization value to your Terraform Cloud organization's name
-# before running `terraform init`.
+# # This block instructs the Terraform CLI to use your Terraform Cloud workspace
+# # as the remote backend for this project.
+# #
+# # Update the organization value to your Terraform Cloud organization's name
+# # before running `terraform init`.
 
-terraform {
+# terraform {
 
-  cloud {
-    organization = "org-tfc"
+#   cloud {
+#     organization = "org-tfc"
 
-    workspaces {
-      name = "tfc-demo-tutorial"
-    }
-  }
-}
+#     workspaces {
+#       name = "tfc-demo-tutorial"
+#     }
+#   }
+# }
