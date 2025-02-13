@@ -10,7 +10,7 @@ terraform {
     organization = "org-tfc"
 
     workspaces {
-      name = "tfc-das-tutorial"
+      name = "tfc-demo-tutorial"
     }
   }
 }
